@@ -1,0 +1,13 @@
+@font-face {font-family: 'nanum'; src: url('/fonts/nanum.ttf') format('TrueType');}
+@font-face {font-family: 'chevyM'; src: url('/fonts/chevyM.ttf') format('TrueType');}
+@font-face {font-family: 'FuturaMedium'; src: url('/fonts/FuturaMedium.otf') format('TrueType');}
+
+body {
+  overflow: hidden;
+  margin: 0px;
+  font: 14px "FuturaMedium","chevyM","nanum", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}

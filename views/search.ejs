@@ -1,0 +1,36 @@
+<html>
+
+<body>
+  <div id="main"></div>
+</body>
+
+</html>
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+<script>
+
+  function getWidth() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+  }
+
+  function getHeight() {
+    return Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.documentElement.clientHeight
+    );
+  }
+  new daum.Postcode({
+    oncomplete: function (data) {
+      console.log(data.address);
+      window.TestApp.setAddress(data.address);
+    }
+  }).open();
+</script>

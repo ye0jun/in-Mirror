@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script>
+    Math.radians = function(degrees) {
+      return degrees * Math.PI / 180;
+    };
+
+    // Converts from radians to degrees.
+    Math.degrees = function(radians) {
+      return radians * 180 / Math.PI;
+    };
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/javascripts/firebase.js"></script>    
+    <script src="/javascripts/pixi.min.js"></script>
+    <script src="/javascripts/imContainer.js"></script>    
+    <script src="/javascripts/pushMessage.js"></script>
+    <script src="/javascripts/weatherForNow.js"></script>
+    <script src="/javascripts/weatherForDay.js"></script>
+    <script src="/javascripts/searchRank.js"></script>
+    <script src="/javascripts/headLineNews.js"></script>
+    <script src="/javascripts/dust.js"></script>
+    <script src="/javascripts/temperature.js"></script>
+    <script src="/javascripts/humidity.js"></script>
+    <script src="/javascripts/stock.js"></script>
+    <script src="/javascripts/time.js"></script>
+    <script src="/javascripts/bus.js"></script>
+    <script src="/javascripts/subway.js"></script>
+    <script src="/javascripts/coin.js"></script>
+
+  </head>
+  <body>
+    <script src="/javascripts/main.js"></script>
+    
+  </body>
+</html>
